@@ -9,7 +9,7 @@ def generate_random_string(length):
 
 num_strings = 1
 string_length = 16
-
+count = 0
 while True:
     print("\nMenu:")
     print("1. Generate Amazon Giftcard")
@@ -23,12 +23,14 @@ while True:
         time.sleep(5)
 
         print("\nAmazon Giftcard Generated:\n")
+        count = 1
         for i in range(num_strings):
             new_string = generate_random_string(string_length)
-            print(new_string)
+            print(f"{count} Gift Card: {new_string}")
             time.sleep(3)
+            count += 1
 
-        print("All Giftcard Generated successfully")
+        print("\n All Giftcard Generated successfully")
         
     elif user_choice == "2":
         print("Generator terminated.")
