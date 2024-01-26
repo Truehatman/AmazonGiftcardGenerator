@@ -22,7 +22,6 @@ while True:
         print('Generating giftcard...')
         time.sleep(5)
 
-        print("\nAmazon Giftcard Generated:\n")
         count = 1
         for i in range(num_strings):
             new_string = generate_random_string(string_length)
