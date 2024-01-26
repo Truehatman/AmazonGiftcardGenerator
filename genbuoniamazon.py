@@ -18,7 +18,7 @@ while True:
     user_choice = input("Chose the number: ")
 
     if user_choice == "1":
-        num_strings = input("How many giftcard do you want to generate: ")
+        num_strings = int(input("How many giftcard do you want to generate: "))
         print('Generating giftcard...')
         time.sleep(5)
 
