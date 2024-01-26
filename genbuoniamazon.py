@@ -7,7 +7,7 @@ def generate_random_string(length):
     characters = string.ascii_letters + string.digits
     return ''.join(random.choice(characters) for _ in range(length))
 
-num_strings = 10
+num_strings = 1
 string_length = 16
 
 while True:
@@ -18,6 +18,7 @@ while True:
     user_choice = input("Chose the number: ")
 
     if user_choice == "1":
+        num_strings = input("How many giftcard do you want to generate: "
         print('Generating giftcard...')
         time.sleep(5)
 
@@ -26,6 +27,8 @@ while True:
             new_string = generate_random_string(string_length)
             print(new_string)
             time.sleep(3)
+
+        print("All Giftcard Generated successfully")
         
     elif user_choice == "2":
         print("Generator terminated.")
